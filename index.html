@@ -1,24 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Five Keys</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Keys to Getting Your Investment Property Funded | NewTree Capital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
-    <h1>Five Keys</h1>
-  </header>
+<body class="bg-white">
 
-  <main>
-    <p>Welcome to Five Keys.</p>
-  </main>
+    <!-- NAVIGATION -->
+    <nav class="bg-fore-900 border-b border-fore-800">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-accent-450 rounded-lg flex items-center justify-center">
+                    <i data-lucide="building-2" class="w-5 h-5 text-white"></i>
+                </div>
+                <span class="text-white font-bold text-lg tracking-tight">NewTree Capital</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="https://newtree-capital.net" class="text-fore-300 hover:text-white transition-colors">Home</a>
+                <a href="tel:7075022191" class="text-fore-300 hover:text-white transition-colors flex items-center gap-1">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> 707-502-2191
+                </a>
+                <a href="#cta-bottom" class="bg-accent-450 hover:bg-accent-400 text-white px-4 py-2 rounded-lg font-semibold transition-colors text-sm">Get the Free Guide</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-white">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-fore-850 border-t border-fore-700 px-4 py-4 space-y-3">
+            <a href="https://newtree-capital.net" class="block text-fore-300 hover:text-white transition-colors py-2">Home</a>
+            <a href="tel:7075022191" class="block text-fore-300 hover:text-white transition-colors py-2 flex items-center gap-2">
+                <i data-lucide="phone" class="w-4 h-4"></i> 707-502-2191
+            </a>
+            <a href="#cta-bottom" class="block bg-accent-450 hover:bg-accent-400 text-white px-4 py-3 rounded-lg font-semibold text-center transition-colors">Get the Free Guide</a>
+        </div>
+    </nav>
 
-  <footer>
-    <p>&copy; 2026 Five Keys</p>
-  </footer>
+    <!-- HERO SECTION -->
+    <section class="hero-gradient relative overflow-hidden">
+        <!-- Decorative SVG pattern -->
+        <svg class="float-pattern top-10 right-10 w-64 h-64" viewBox="0 0 200 200" fill="none">
+            <rect x="20" y="30" width="60" height="80" rx="4" stroke="white" stroke-width="2"/>
+            <rect x="40" y="50" width="60" height="80" rx="4" stroke="white" stroke-width="2"/>
+            <rect x="100" y="20" width="50" height="70" rx="4" stroke="white" stroke-width="2"/>
+            <rect x="120" y="90" width="40" height="60" rx="4" stroke="white" stroke-width="2"/>
+            <circle cx="30" cy="150" r="15" stroke="white" stroke-width="2"/>
+        </svg>
+        <svg class="float-pattern bottom-10 left-10 w-48 h-48" viewBox="0 0 200 200" fill="none">
+            <path d="M20 180 L100 40 L180 180 Z" stroke="white" stroke-width="2"/>
+            <rect x="60" y="100" width="80" height="60" rx="4" stroke="white" stroke-width="2"/>
+        </svg>
 
-  <script src="js/main.js"></script>
+        <div class="max-w-4xl mx-auto px-4 md:px-6 py-16 md:py-24 relative z-10">
+            <div class="text-center mb-10">
+                <span class="inline-block bg-accent-450/20 border border-accent-400/30 text-accent-200 text-xs md:text-sm font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
+                    Free Guide for Real Estate Investors
+                </span>
+                <h1 class="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    5 Keys to Getting Your Investment Property Funded
+                    <span class="block text-accent-300 mt-2 text-2xl md:text-4xl lg:text-5xl">(Even If Banks Say No)</span>
+                </h1>
+                <p class="text-fore-300 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
+                    Discover how savvy investors are bypassing traditional banks and closing deals in <strong class="text-white">days — not months</strong> — using private money strategies.
+                </p>
+            </div>
+
+            <!-- Hero Email Form -->
+            <div class="max-w-lg mx-auto">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/10">
+                    <form id="hero-form" class="space-y-4" action="https://forms.zohopublic.com/newtreecapitalresources1/form/GETMYFREEGUIDE/formperma/kOUK4ahuTsm3KXOjvlyTly5OWNimXsxItE1CuZ0VYBg/htmlRecords/submit" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+                        <!-- Zoho Forms endpoint. Keep the name attributes (SingleLine, Email, zf_*): renaming them makes Zoho record empty values. -->
+                        <input type="hidden" name="zf_referrer_name" value="">
+                        <input type="hidden" name="zf_redirect_url" value=""><!-- filled in by js/main.js -->
+                        <input type="hidden" name="zc_gad" value="">
+                        <div>
+                            <input type="text" name="SingleLine" maxlength="255" placeholder="Your First Name" autocomplete="given-name" required
+                                class="w-full px-4 py-3.5 rounded-lg bg-white text-fore-800 placeholder-fore-400 text-base font-medium focus:outline-none focus:ring-2 focus:ring-accent-400">
+                        </div>
+                        <div>
+                            <input type="email" name="Email" maxlength="255" placeholder="Your Best Email" autocomplete="email" required
+                                class="w-full px-4 py-3.5 rounded-lg bg-white text-fore-800 placeholder-fore-400 text-base font-medium focus:outline-none focus:ring-2 focus:ring-accent-400">
+                        </div>
+                        <button type="submit"
+                            class="glow-btn w-full bg-accent-450 hover:bg-accent-400 text-white font-bold text-lg py-4 rounded-lg uppercase tracking-wide">
+                            Get My Free Guide &rarr;
+                        </button>
+                    </form>
+                    <div class="flex items-center justify-center gap-2 mt-4 text-accent-200/70 text-xs">
+                        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                        <span>Your information is 100% secure. We never share your data.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAIN POINTS SECTION -->
+    <section class="bg-fore-50 py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-2xl md:text-4xl font-bold text-fore-900 mb-4">
+                    Are You Tired of Hearing <span class="text-red-600">"No"</span> From Banks?
+                </h2>
+                <p class="text-fore-500 text-base md:text-lg max-w-2xl mx-auto">If any of these sound familiar, you're not alone — and there's a better way.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+                <div class="pain-card bg-white rounded-xl p-6 shadow-sm border border-fore-100 flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="clock" class="w-6 h-6 text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 mb-1">Banks Take 45–60 Days to Close</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">Your deal can't wait that long. By the time the bank decides, another investor has already closed.</p>
+                    </div>
+                </div>
+                <div class="pain-card bg-white rounded-xl p-6 shadow-sm border border-fore-100 flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="shield-x" class="w-6 h-6 text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 mb-1">Perfect Credit Required</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">One late payment, one high balance, one "ding" — and the bank slams the door in your face.</p>
+                    </div>
+                </div>
+                <div class="pain-card bg-white rounded-xl p-6 shadow-sm border border-fore-100 flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="building" class="w-6 h-6 text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 mb-1">They Don't Understand Investment Properties</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">Banks are built for primary residences. They see a distressed property and run the other direction.</p>
+                    </div>
+                </div>
+                <div class="pain-card bg-white rounded-xl p-6 shadow-sm border border-fore-100 flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center">
+                        <i data-lucide="file-x" class="w-6 h-6 text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 mb-1">Endless Paperwork, Then Rejection</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">Weeks of documents, verifications, and hoops to jump through — only to hear "denied" at the finish line.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <p class="text-accent-600 font-display text-xl md:text-2xl font-semibold italic">There's a better way...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU'LL LEARN -->
+    <section class="bg-white py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-2xl md:text-4xl font-bold text-fore-900 mb-4">Inside This Free Guide, You'll Discover...</h2>
+                <p class="text-fore-500 text-base md:text-lg">Five game-changing strategies that separate funded investors from frustrated ones.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="benefit-card bg-accent-100 rounded-xl p-5 md:p-6 flex gap-4 items-start">
+                    <div class="flex-shrink-0 w-10 h-10 bg-accent-450 rounded-full flex items-center justify-center mt-0.5">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 text-base md:text-lg mb-1">Why Bank Rejection Is Actually <em>Good News</em> for Your Investing Career</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">It means you're thinking like an investor, not a homeowner. Learn why that puts you ahead.</p>
+                    </div>
+                </div>
+                <div class="benefit-card bg-accent-100 rounded-xl p-5 md:p-6 flex gap-4 items-start">
+                    <div class="flex-shrink-0 w-10 h-10 bg-accent-450 rounded-full flex items-center justify-center mt-0.5">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 text-base md:text-lg mb-1">The Private Money Advantage That Lets You Close in Days, Not Months</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">Speed kills — in the best way possible. Discover how private money gives you the edge.</p>
+                    </div>
+                </div>
+                <div class="benefit-card bg-accent-100 rounded-xl p-5 md:p-6 flex gap-4 items-start">
+                    <div class="flex-shrink-0 w-10 h-10 bg-accent-450 rounded-full flex items-center justify-center mt-0.5">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 text-base md:text-lg mb-1">How to Structure Deals That Attract Funding Like a Magnet</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">Learn exactly what lenders want to see — ARV, LTV, exit strategy — and how to present it.</p>
+                    </div>
+                </div>
+                <div class="benefit-card bg-accent-100 rounded-xl p-5 md:p-6 flex gap-4 items-start">
+                    <div class="flex-shrink-0 w-10 h-10 bg-accent-450 rounded-full flex items-center justify-center mt-0.5">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 text-base md:text-lg mb-1">Why Building Your Funding Team <em>Before</em> You Need It Is the #1 Investor Move</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">The best deals go fast. Have your financing locked in before you find your next opportunity.</p>
+                    </div>
+                </div>
+                <div class="benefit-card bg-accent-100 rounded-xl p-5 md:p-6 flex gap-4 items-start">
+                    <div class="flex-shrink-0 w-10 h-10 bg-accent-450 rounded-full flex items-center justify-center mt-0.5">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-fore-800 text-base md:text-lg mb-1">The Exit Strategy Secrets That Make Lenders Compete to Fund Your Deals</h3>
+                        <p class="text-fore-500 text-sm leading-relaxed">Flip, BRRRR, or hold — match your strategy to the right product and watch lenders line up.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF / STATS -->
+    <section class="bg-fore-50 py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-2xl md:text-4xl font-bold text-fore-900 mb-4">Why Investors Trust NewTree Capital</h2>
+                <p class="text-fore-500 text-base md:text-lg">We built our business around one mission: getting real estate investors funded — fast.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12">
+                <div class="stat-card rounded-xl p-5 md:p-6 text-center">
+                    <div class="w-12 h-12 bg-accent-450 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="zap" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-fore-800 text-base md:text-lg">Quick Closing</h3>
+                    <p class="text-fore-500 text-xs md:text-sm mt-1">Close in days, not months</p>
+                </div>
+                <div class="stat-card rounded-xl p-5 md:p-6 text-center">
+                    <div class="w-12 h-12 bg-accent-450 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-fore-800 text-base md:text-lg">No Credit Barriers</h3>
+                    <p class="text-fore-500 text-xs md:text-sm mt-1">Asset-based lending only</p>
+                </div>
+                <div class="stat-card rounded-xl p-5 md:p-6 text-center">
+                    <div class="w-12 h-12 bg-accent-450 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="trending-down" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-fore-800 text-base md:text-lg">Competitive Rates</h3>
+                    <p class="text-fore-500 text-xs md:text-sm mt-1">Best rates in private money</p>
+                </div>
+                <div class="stat-card rounded-xl p-5 md:p-6 text-center">
+                    <div class="w-12 h-12 bg-accent-450 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="network" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-fore-800 text-base md:text-lg">Expansive Network</h3>
+                    <p class="text-fore-500 text-xs md:text-sm mt-1">Growing lender network</p>
+                </div>
+            </div>
+            <!-- Testimonial -->
+            <div class="max-w-2xl mx-auto bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-fore-100 text-center">
+                <div class="flex justify-center mb-4">
+                    <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <blockquote class="text-fore-700 text-base md:text-lg italic leading-relaxed mb-4">
+                    "I was turned down by two banks and thought my deal was dead. NewTree Capital got me funded in under a week. I've used them for three deals since — wouldn't go anywhere else."
+                </blockquote>
+                <p class="text-fore-500 text-sm font-semibold">— Satisfied Investor Client</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / TRUST -->
+    <section class="bg-white py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-4 md:px-6">
+            <div class="md:flex md:gap-12 items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="w-40 h-40 md:w-48 md:h-48 bg-accent-100 rounded-2xl flex flex-col items-center justify-center border-2 border-accent-200">
+                        <div class="w-20 h-20 bg-accent-450 rounded-full flex items-center justify-center mb-3">
+                            <i data-lucide="user" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <p class="font-bold text-fore-800 text-sm">Harold Ricker</p>
+                        <p class="text-accent-600 text-xs font-medium">CEO</p>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="font-display text-2xl md:text-3xl font-bold text-fore-900 mb-4">Your Partner in Real Estate Investment Funding</h2>
+                    <p class="text-fore-600 leading-relaxed mb-4">
+                        NewTree Capital Resources was built from the ground up for one purpose: <strong>to help real estate investors get funded when traditional banks can't — or won't.</strong>
+                    </p>
+                    <p class="text-fore-600 leading-relaxed mb-4">
+                        Led by Harold Ricker, our team combines a technology-driven, streamlined process with the personal attention you deserve. We're not a faceless bank. When you work with us, you work with real people who understand your business.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span class="inline-flex items-center gap-1.5 bg-accent-100 text-accent-700 text-xs font-semibold px-3 py-1.5 rounded-full">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Asset-Based Lending
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 bg-accent-100 text-accent-700 text-xs font-semibold px-3 py-1.5 rounded-full">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Fix & Flip Specialists
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 bg-accent-100 text-accent-700 text-xs font-semibold px-3 py-1.5 rounded-full">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> BRRRR Strategy
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 bg-accent-100 text-accent-700 text-xs font-semibold px-3 py-1.5 rounded-full">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Rental Properties
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 bg-accent-100 text-accent-700 text-xs font-semibold px-3 py-1.5 rounded-full">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Distressed Properties
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECOND CTA -->
+    <section id="cta-bottom" class="cta-gradient py-16 md:py-24 relative overflow-hidden">
+        <svg class="float-pattern top-5 left-5 w-40 h-40" viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="80" stroke="white" stroke-width="1.5"/>
+            <circle cx="100" cy="100" r="50" stroke="white" stroke-width="1.5"/>
+        </svg>
+        <div class="max-w-xl mx-auto px-4 md:px-6 relative z-10 text-center">
+            <h2 class="font-display text-2xl md:text-4xl font-bold text-white mb-4">
+                Ready to Stop Hearing "No" and Start Closing Deals?
+            </h2>
+            <p class="text-accent-200 text-base md:text-lg mb-8 leading-relaxed">
+                Download your free copy now. This guide reveals strategies most investors never learn.
+            </p>
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/10">
+                <form id="bottom-form" class="space-y-4" action="https://forms.zohopublic.com/newtreecapitalresources1/form/GETMYFREEGUIDE/formperma/kOUK4ahuTsm3KXOjvlyTly5OWNimXsxItE1CuZ0VYBg/htmlRecords/submit" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <!-- Zoho Forms endpoint. Keep the name attributes (SingleLine, Email, zf_*): renaming them makes Zoho record empty values. -->
+                    <input type="hidden" name="zf_referrer_name" value="">
+                    <input type="hidden" name="zf_redirect_url" value=""><!-- filled in by js/main.js -->
+                    <input type="hidden" name="zc_gad" value="">
+                    <div>
+                        <input type="text" name="SingleLine" maxlength="255" placeholder="Your First Name" autocomplete="given-name" required
+                            class="w-full px-4 py-3.5 rounded-lg bg-white text-fore-800 placeholder-fore-400 text-base font-medium focus:outline-none focus:ring-2 focus:ring-accent-400">
+                    </div>
+                    <div>
+                        <input type="email" name="Email" maxlength="255" placeholder="Your Best Email" autocomplete="email" required
+                            class="w-full px-4 py-3.5 rounded-lg bg-white text-fore-800 placeholder-fore-400 text-base font-medium focus:outline-none focus:ring-2 focus:ring-accent-400">
+                    </div>
+                    <button type="submit"
+                        class="glow-btn w-full bg-accent-450 hover:bg-accent-400 text-white font-bold text-lg py-4 rounded-lg uppercase tracking-wide">
+                        Get My Free Guide &rarr;
+                    </button>
+                </form>
+                <p class="text-accent-200/60 text-xs mt-4 flex items-center justify-center gap-1.5">
+                    <i data-lucide="lock" class="w-3 h-3"></i> We respect your privacy. Unsubscribe anytime.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="bg-fore-50 py-16 md:py-24">
+        <div class="max-w-3xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-2xl md:text-4xl font-bold text-fore-900 mb-4">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-3">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-xl border border-fore-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer">
+                        <span class="font-semibold text-fore-800 text-sm md:text-base pr-4">Is this guide really free?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-fore-400 faq-chevron flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-fore-500 text-sm leading-relaxed">Yes, 100% free — no credit card, no hidden fees, no strings attached. We created this guide to help real estate investors understand their funding options. We believe that when you see the possibilities, you'll want to work with us.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-xl border border-fore-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer">
+                        <span class="font-semibold text-fore-800 text-sm md:text-base pr-4">Who is this guide for?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-fore-400 faq-chevron flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-fore-500 text-sm leading-relaxed">This guide is for real estate investors at any level — whether you're doing your first fix-and-flip or your fiftieth rental acquisition. If you've ever been turned down by a bank, struggled with slow closings, or want to scale faster with private money, this guide is for you.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-xl border border-fore-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer">
+                        <span class="font-semibold text-fore-800 text-sm md:text-base pr-4">What is private money lending?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-fore-400 faq-chevron flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-fore-500 text-sm leading-relaxed">Private money lending is business-purpose financing secured by real estate. Unlike traditional banks, private lenders focus on the value of the property and the strength of the deal — not your personal credit score. This means faster approvals, quicker closings, and more flexibility.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-xl border border-fore-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer">
+                        <span class="font-semibold text-fore-800 text-sm md:text-base pr-4">Do I need good credit to work with NewTree Capital?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-fore-400 faq-chevron flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-fore-500 text-sm leading-relaxed">No! Our lending is asset-based, which means we focus on the property and the deal structure — not your credit score. Many of our most successful investor clients came to us after being turned down by traditional banks.</p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="bg-white rounded-xl border border-fore-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer">
+                        <span class="font-semibold text-fore-800 text-sm md:text-base pr-4">How quickly can I get funded?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-fore-400 faq-chevron flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-fore-500 text-sm leading-relaxed">Many investors close in days, not months. The exact timeline depends on the deal specifics, but our streamlined process and expansive lender network are built for speed. Fill out our questionnaire and we'll give you a realistic timeline for your specific situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-fore-900 py-10">
+        <div class="max-w-5xl mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 mb-8">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-accent-450 rounded-lg flex items-center justify-center">
+                        <i data-lucide="building-2" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-white font-bold text-lg">NewTree Capital Resources</span>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-4 text-sm">
+                    <a href="tel:7075022191" class="text-fore-400 hover:text-white transition-colors flex items-center gap-1.5">
+                        <i data-lucide="phone" class="w-4 h-4"></i> 707-502-2191
+                    </a>
+                    <a href="mailto:harold@newtree-capital.net" class="text-fore-400 hover:text-white transition-colors flex items-center gap-1.5">
+                        <i data-lucide="mail" class="w-4 h-4"></i> harold@newtree-capital.net
+                    </a>
+                    <a href="https://newtree-capital.net" class="text-fore-400 hover:text-white transition-colors flex items-center gap-1.5">
+                        <i data-lucide="globe" class="w-4 h-4"></i> newtree-capital.net
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-fore-800 pt-6">
+                <p class="text-fore-500 text-xs leading-relaxed text-center max-w-3xl mx-auto">
+                    NewTree Capital Resources provides business-purpose financing secured by real estate. We do not offer consumer or personal loans. All funding is subject to underwriting, verification, and approval. This page is for informational purposes only and does not constitute financial, legal, or investment advice. Consult with qualified professionals before making investment decisions.
+                </p>
+                <p class="text-fore-600 text-xs text-center mt-4">Made by Copilot</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,23 +1,61 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', system-ui, sans-serif; color: #27272a; }
+.font-display { font-family: 'Playfair Display', Georgia, serif; }
+html { scroll-behavior: smooth; }
+.hero-gradient {
+    background: linear-gradient(135deg, #082c11 0%, #01481a 40%, #015720 70%, #01712b 100%);
 }
-
-body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.5;
-  color: #1a1a1a;
-  background-color: #ffffff;
+.cta-gradient {
+    background: linear-gradient(135deg, #093815 0%, #01481a 50%, #016826 100%);
 }
-
-header, main, footer {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1.5rem;
+.glow-btn {
+    box-shadow: 0 0 20px rgba(23, 143, 59, 0.4), 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
-
-footer {
-  color: #666;
-  font-size: 0.875rem;
+.glow-btn:hover {
+    box-shadow: 0 0 30px rgba(23, 143, 59, 0.6), 0 6px 20px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+.pain-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pain-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+.benefit-card {
+    border-left: 4px solid #178f3b;
+    transition: transform 0.2s ease;
+}
+.benefit-card:hover { transform: translateX(4px); }
+.stat-card {
+    background: linear-gradient(135deg, #f2fdf4 0%, #d8f7dd 100%);
+    border: 1px solid #baeec0;
+    transition: transform 0.2s ease;
+}
+.stat-card:hover { transform: translateY(-4px); }
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-answer.open {
+    max-height: 500px;
+}
+.faq-chevron {
+    transition: transform 0.3s ease;
+}
+.faq-chevron.rotated {
+    transform: rotate(180deg);
+}
+.success-msg {
+    animation: fadeInUp 0.5s ease;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.float-pattern {
+    position: absolute;
+    opacity: 0.05;
 }
